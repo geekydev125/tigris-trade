@@ -1,0 +1,121 @@
+.leader_table {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.leader_table_container {
+    /* border: 1px solid #343434;
+	border-radius: 8px;
+	background:#080808;
+	padding: 25px; */
+    max-width: 1000px;
+    width: 1000px;
+}
+
+.leader_table_header h1 {
+    font-size: 25px;
+	text-align: center;
+	color:#FFF;
+}
+
+.leader_pwt_title p{
+    margin-top: 3px;
+    font-weight: 400;
+    font-size: 13px;
+    color: #fff;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    line-height: normal;
+}
+
+.leader_pwt_title h1 {
+    margin-top: 3px;
+	font-size: 12px;
+	color:#FFF;
+}
+
+.leader_pwt_title div {
+    margin-top: 3px;
+	font-weight: 500;
+	font-size: 13px;
+}
+
+/* Loading */
+
+.lds-ellipsis {
+    display: inline-block;
+    position: relative;
+    width: 80px;
+    height: 80px;
+    left: 46%
+  }
+  @media screen and (max-width: 600px) {
+    .lds-ellipsis {
+      left: 40%;
+    }
+  }
+  .lds-ellipsis div {
+    position: absolute;
+    top: 33px;
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+    background: #fff;
+    animation-timing-function: cubic-bezier(0, 1, 1, 0);
+  }
+  .lds-ellipsis div:nth-child(1) {
+    left: 8px;
+    animation: lds-ellipsis1 0.6s infinite;
+  }
+  .lds-ellipsis div:nth-child(2) {
+    left: 8px;
+    animation: lds-ellipsis2 0.6s infinite;
+  }
+  .lds-ellipsis div:nth-child(3) {
+    left: 32px;
+    animation: lds-ellipsis2 0.6s infinite;
+  }
+  .lds-ellipsis div:nth-child(4) {
+    left: 56px;
+    animation: lds-ellipsis3 0.6s infinite;
+  }
+  @keyframes lds-ellipsis1 {
+    0% {
+      transform: scale(0);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  @keyframes lds-ellipsis3 {
+    0% {
+      transform: scale(1);
+    }
+    100% {
+      transform: scale(0);
+    }
+  }
+  @keyframes lds-ellipsis2 {
+    0% {
+      transform: translate(0, 0);
+    }
+    100% {
+      transform: translate(24px, 0);
+    }
+  }
+
+/* ---------------- */
+.leader_pwt_box {
+  padding: 0px 0px 1px 0px;
+}
+
+.leader_pwt_head, .leader_pwt_body{
+	display: flex;
+	flex-wrap: wrap;
+    border-bottom: 2px solid #181D24;
+    padding: 8px 8px;
+}

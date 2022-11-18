@@ -1,0 +1,117 @@
+/* Loading */
+
+.lds-ellipsis {
+    display: inline-block;
+    position: relative;
+    width: 80px;
+    height: 80px;
+    left: 46%
+  }
+  @media screen and (max-width: 600px) {
+    .lds-ellipsis {
+      left: 40%;
+    }
+  }
+  .lds-ellipsis div {
+    position: absolute;
+    top: 33px;
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+    background: #fff;
+    animation-timing-function: cubic-bezier(0, 1, 1, 0);
+  }
+  .lds-ellipsis div:nth-child(1) {
+    left: 8px;
+    animation: lds-ellipsis1 0.6s infinite;
+  }
+  .lds-ellipsis div:nth-child(2) {
+    left: 8px;
+    animation: lds-ellipsis2 0.6s infinite;
+  }
+  .lds-ellipsis div:nth-child(3) {
+    left: 32px;
+    animation: lds-ellipsis2 0.6s infinite;
+  }
+  .lds-ellipsis div:nth-child(4) {
+    left: 56px;
+    animation: lds-ellipsis3 0.6s infinite;
+  }
+  @keyframes lds-ellipsis1 {
+    0% {
+      transform: scale(0);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  @keyframes lds-ellipsis3 {
+    0% {
+      transform: scale(1);
+    }
+    100% {
+      transform: scale(0);
+    }
+  }
+  @keyframes lds-ellipsis2 {
+    0% {
+      transform: translate(0, 0);
+    }
+    100% {
+      transform: translate(24px, 0);
+    }
+  }
+
+/* ---------------- */
+
+.tableContainer {
+    width: 40%;
+    background: #0b0e11;
+    padding: 15px 15px;
+    border-radius: 10px;
+    font-size: 15px;
+    border-radius: 10px;
+    color:rgb(117, 126, 126);
+    height:235px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.chartTable {
+    width: 100%;
+    border-spacing: 0;
+    border-collapse: collapse;
+    border-style: hidden;
+}
+
+.chartTable tr {
+    border-bottom: 2px solid #181D24
+}
+
+.chartTable tr:hover {
+    cursor: pointer;
+    background: #2a2e39;
+}
+
+.chartTable th {
+    padding: 0 8px 4px 8px;
+    background: #0b0e11;
+}
+
+.chartTable td {
+    max-width: 120px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    padding: 8px;
+}
+
+.chartTable tbody {
+    color:#ffffff;
+}
+
+.noData {
+    text-align: center;
+    padding: 20px;
+    color: rgb(117, 126, 126)
+}

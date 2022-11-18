@@ -1,0 +1,275 @@
+.m-menu{
+	display: none;
+	margin: 20px;
+}
+.m-menu::first-letter {
+	text-transform: uppercase;
+}
+@media all and (max-width: 1200px) {
+	.menu ul li a, #select_box2 .dropdownbox > p, .performance select, .btc_head h2, .btc_button ul li button, .ls_title h2, .vault_title h3{
+		font-size: 14px;
+	}
+	.pw_left h2, .pw_right ul li button, .price_area .nav button, .t_title h3, .user_msg h1, .user_msg p, .user_tbox input, .pnl_box ul li, .btc_head ul li, .btc_title p, .btc_border h3, .ls_tab ul li a, .ls_sub_title p, .stop_loss_box p {
+		font-size: 12px;
+	}
+
+	.t_title h3 img, .user img, .user_send ul li img, .vault_title img {
+		width: 20px;
+		height: 20px;
+	}
+
+	.price_area .nav button img {
+		width: 16px;
+	}
+	.pwt_title p, .pwt_title h1{
+		font-size: 10px;
+	}
+
+
+	.ls_title select {
+		font-size: 12px;
+		width: 130px;
+	}
+	.value input, .vault_value input{
+		width: 130px;
+		padding: 8px 10px;
+		font-size: 12px;
+	}
+}
+
+
+@media all and (max-width: 1199px) {
+	.trade_area .custom_col_1, .trade_area .custom_col_2 {
+		flex: 0 0 100%;
+		max-width: 100%;
+	}
+
+	.menu ul li a, #select_box2 .dropdownbox > p, .performance select, .btc_head h2, .btc_button ul li button, .ls_title h2, .vault_title h3 {
+		font-size: 18px;
+	}
+	.pw_left h2, .pw_right ul li button, .price_area .nav button, .t_title h3, .user_msg h1, .user_msg p, .user_tbox input, .pnl_box ul li, .btc_head ul li, .btc_title p, .btc_border h3, .ls_tab ul li a, .ls_sub_title p, .stop_loss_box p, .t_title span{
+		font-size: 15px;
+	}
+	.pwt_title p, .pwt_title h1 {
+		font-size: 14px;
+	}
+	.pwt_title span {
+		font-size: 12px;
+		line-height: normal;
+	}
+	.ls_title select, .value input, .vault_value input {
+		width: 180px;
+		font-size: 15px;
+	}
+
+	#select_box2 .dropdownbox img, .t_title h3 img, .user img, .user_send ul li img, .vault_title img {
+		width: 30px;
+		height: 30px;
+	}
+}
+
+
+@media all and (min-width: 992px) {
+	.custom_col_2.show_menu{
+		width: 100% !important;
+		position: relative;
+		left: inherit;
+	}
+	.con_sel_button{
+		display: flex !important;
+		margin-right: 20px;
+	}
+}
+
+@media all and (max-width: 991px) {
+	.menu{
+		display: none;
+	}
+	.m-menu{
+		display: flex;
+	}
+	.bar{
+		display: none;
+	}
+	.con_sel_button{
+		margin: 20px;
+	}
+	.navbar-toggler{
+		margin-right: 10px;
+	}
+	.custom_col_1, .custom_col_2{
+		flex: 0 0 100%;
+		max-width: 100%;
+	}
+	.custom_col_2.show_menu {
+		position: absolute;
+		top: 0;
+		left: -300px;
+		width: 300px;
+		height: 100vh;
+		background: #111;
+		z-index: 11;
+		padding: 10px 20px;
+		transition: 0.5s;
+		border-right: 1px solid #5F5F61;
+	}
+	.custom_col_2.show_menu.open{
+		left: 0px;
+	}
+	.menu ul {
+		flex-direction: column;
+		align-items: flex-start;
+	}
+	.menu ul li a.active::after, .menu ul li a:hover::after {
+		display: none;
+	}
+	.menu ul li {
+		width: 100%;
+	}
+	.menu ul li a {
+		display: block;
+		padding: 8px 0px;
+		font-size: 15px;
+	}
+	.trade_area {
+		padding-top: 75px;
+		padding-bottom: 60px;
+	}
+}
+
+
+
+@media all and (max-width: 767px) {
+	.logo img {
+		width: 140px;
+	}
+	.price_table {
+		overflow: hidden;
+		overflow-x: auto;
+		width: 100%;
+	}
+	.pw_left h2, .pw_right ul li button, .price_area .nav button, .t_title h3, .user_msg h1, .user_msg p, .user_tbox input, .pnl_box ul li, .btc_head ul li, .btc_title p, .btc_border h3, .ls_tab ul li a, .ls_sub_title p, .stop_loss_box p, .t_title span {
+		font-size: 12px;
+	}
+	.footer_code{
+		display: none;
+	}
+	.footer_left, .footer_right {
+		flex: 0 0 50%;
+		max-width: 50%;
+	}
+	.footer_left ul li a {
+		font-size: 14px;
+	}
+	.footer_right ul li a img {
+		width: 15px;
+		height: 15px;
+	}
+	.messager button img {
+		width: 30px;
+		height: 30px;
+	}
+	.scroll button img {
+		width: 25px;
+		height: 25px;
+	}
+
+	.price_area .tab-content{
+		overflow: hidden;
+		overflow-x: auto;
+	}
+	.pwt_box {
+		width: 150%;
+	}
+	.pwt_title p, .pwt_title h1, .pwt_title span{
+		font-size: 12px;
+	}
+
+}
+
+@media all and (max-width: 550px) {
+	.btc_button ul li button{
+		font-size: 12px;
+		padding: 10px 10px;
+	}
+	#select_box2 .dropdownbox img, .t_title h3 img, .user img, .user_send ul li img, .vault_title img {
+		width: 20px;
+		height: 20px;
+	}
+	.pw_left {
+		width: 100%;
+		padding-bottom: 15px;
+	}
+	.pw_right {
+		width: 100%;
+	}
+	.pw_right ul {
+		justify-content: space-between;
+	}
+	.menu ul li a, #select_box2 .dropdownbox > p, .performance select, .btc_head h2, .btc_button ul li button, .ls_title h2, .vault_title h3, .buttons{
+		font-size: 14px;
+	}
+}
+
+@media all and (max-width: 500px) {
+	.btc_title p, .btc_border h3{
+		font-size: 10px;
+	}
+	.btc_border span {
+		border-top: 1px dashed #4F4F4F;
+	}
+	.btc_button ul li button{
+		font-size: 12px;
+	}
+	.footer_left {
+		flex: 0 0 35%;
+		max-width: 35%;
+	}
+	.footer_right {
+		flex: 0 0 65%;
+		max-width: 65%;
+	}
+	.footer_left ul {
+		padding-bottom: 20px;
+		flex-direction: column;
+	}
+	.footer_left ul li:first-child::after {
+		display: none;
+	}
+	.pop_title h2 {
+		font-size: 12px;
+	}
+	.pop_title p, .output p, .type_input input{
+		font-size: 10px;
+	}
+	.pop_user img {
+		width: 20px;
+		height: 20px;
+	}
+	.send_btn button img {
+		width: 15px;
+	}
+	.ask_popup {
+		width: 250px;
+	}
+	.popup_body {
+		height: 160px;
+	}
+	.pwt_title p, .pwt_title h1, .pwt_title span {
+		font-size: 10px;
+	}
+	.pwt_box {
+		width: 160%;
+	}
+	.type_input {
+		width: calc(100% - 25px);
+	}
+	.send_btn{
+		width: 25px;
+	}
+	.f_discover p {
+		font-size: 9px;
+	}
+}
+
+
